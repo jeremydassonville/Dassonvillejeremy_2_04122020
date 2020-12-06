@@ -1,0 +1,140 @@
+/* Page général */
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/P02_test/police/Raleway/Raleway-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page_body {
+  margin: 20px;
+  font-family: Raleway, arial, serif;
+}
+
+/* Header */
+
+.en_tete {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+}
+
+#logo img {
+  width: 70px;
+}
+#sous_titre {
+  margin-top: -6px;
+}
+
+/* menu navigation */
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 40px;
+  color: #0065fc;
+}
+
+/* barre de recherche */
+
+.barre_de_recherche {
+  display: flex;
+  align-items: baseline;
+  width: 290px;
+}
+
+#bordure_icone_location {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  border-radius: 5px 0 0 5px;
+  height: 21px;
+  width: 20px;
+  padding: 5px;
+}
+
+#icone {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+.barre_de_recherche p {
+  border: 1px solid #f8f8f8;
+  height: 23px;
+  width: 150px;
+  padding-top: 8px;
+  font-size: 0.8em;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+
+#bouton_rechercher {
+  border: 1px solid #0065fc;
+  background-color: #0065fc;
+  color: white;
+  font-size: 0.8em;
+  height: 23px;
+  padding-top: 8px;
+  margin-left: -30px;
+  border-radius: 0 5px 5px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Filtres de recherche */
+
+.filtres {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.7em;
+  font-family: Raleway;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.filtres ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.filtres ul li {
+  margin-left: 30px;
+  padding-right: 20px;
+  border: 1px solid #ecebeb;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#icone_filtres {
+  margin-right: 10px;
+  border: 10px solid #deebff;
+  border-radius: 15px 15px 15px 15px;
+  color: #0065fc;
+}
+
+/* information quantitées logements */
+
+#info {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: grey;
+}
+
+#icone_info {
+  color: #0065fc;
+  font-size: 0.6em;
+  border: 1px solid #ecebeb;
+  height: 17px;
+  width: 20px;
+  border-radius: 30px 30px 30px 30px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+#info p {
+  margin-left: 5px;
+}
