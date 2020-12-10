@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-.page_body {
+body {
   margin: 20px;
   font-family: Raleway, arial, serif;
 }
@@ -138,3 +138,4 @@ nav li {
 #info p {
   margin-left: 5px;
 }
+
