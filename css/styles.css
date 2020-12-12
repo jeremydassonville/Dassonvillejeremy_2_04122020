@@ -39,6 +39,11 @@ nav li {
   color: #0065fc;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #0065fc;
+}
+
 /* barre de recherche */
 
 .barre_de_recherche {
@@ -131,4 +136,106 @@ input::placeholder {
 
 #info p {
   margin-left: 5px;
+}
+
+/* partie Hébergements à Marseille */
+.corps {
+  display: flex;
+  justify-content: space-between;
+}
+
+#titre_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+article {
+  background-color: #ecebeb;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.capsule {
+  display: flex;
+  flex-direction: column;
+}
+
+.capsule img {
+  width: 180px;
+  height: 90px;
+  border-radius: 10px 10px 0 0;
+}
+
+.capsule h2 {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.capsule p {
+  font-size: 0.6em;
+  margin-left: 10px;
+  margin-top: -10px;
+  color: grey;
+}
+
+#etoile {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.6em;
+  margin-left: 9px;
+  margin-top: -8px;
+  color: #0065fc;
+}
+
+.etoile_grise {
+  color: #cfcdcd;
+}
+
+#ligne_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ligne_2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#afficher_plus {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* partie les plus populaires */
+
+aside {
+  background-color: #ecebeb;
+}
+
+#capsule_ho {
+  display: flex;
+  justify-content: space-between;
+}
+
+#capsule_ho img {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px 0 0 10px;
+}
+#description h2 {
+  font-size: 0.8em;
+}
+
+#description p {
+  font-size: 0.6em;
+  color: grey;
+}
+
+#etoile_ho {
+  display: flex;
+  color: blue;
+  font-size: 0.6em;
+  margin-top: 30px;
 }
