@@ -15,12 +15,18 @@ body {
   font-family: Raleway, arial, serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Header */
 
 .en_tete {
   display: flex;
   justify-content: space-between;
-  font-size: 0.6em;
+  font-size: 0.7em;
+  margin-left: -40px;
 }
 
 #logo img {
@@ -28,6 +34,7 @@ body {
 }
 #sous_titre {
   margin-top: -6px;
+  color: grey;
 }
 
 /* menu navigation */
@@ -46,12 +53,18 @@ nav li a {
   color: #0065fc;
 }
 
+nav li a:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 29px;
+}
+
 /* barre de recherche */
 
 .barre_de_recherche {
   display: flex;
   align-items: baseline;
   width: 290px;
+  margin-top: -10px;
 }
 
 #bordure_icone_location {
@@ -151,15 +164,18 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   font-size: 0.6em;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 article {
   background-color: #ecebeb;
   border: 1px solid #ecebeb;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
   width: 600px;
+  padding-bottom: 30px;
 }
 
 .capsule_flex {
@@ -183,6 +199,7 @@ article {
 .capsule img {
   width: 180px;
   height: 90px;
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
@@ -214,9 +231,14 @@ article {
 #afficher_plus {
   font-size: 0.8em;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 /* partie les plus populaires */
+
+#pop_font {
+  font-size: 1.5em;
+}
 
 aside {
   background-color: #ecebeb;
@@ -249,6 +271,7 @@ aside {
 #capsule_ho img {
   width: 90px;
   height: 90px;
+  object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 #description h3 {
@@ -264,7 +287,7 @@ aside {
 
 #etoile_ho {
   display: flex;
-  color: blue;
+  color: #0065fc;
   font-size: 0.6em;
   margin-top: 25px;
   margin-left: 15px;
@@ -275,15 +298,12 @@ aside {
 .activites h2 {
   margin-top: 40px;
   font-size: 0.9em;
+  padding-bottom: 10px;
 }
 
 .activites {
   display: flex;
   flex-direction: column;
-}
-
-.activites h1 {
-  font-size: 1em;
 }
 
 #capsule_activites {
@@ -305,6 +325,7 @@ aside {
 #capsule_verticale img {
   height: 260px;
   width: 213px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -318,6 +339,7 @@ aside {
 #capsule_2 img {
   height: 110px;
   width: 220px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -327,16 +349,17 @@ aside {
 }
 
 #capsule_3 {
-  height: 100px;
+  height: 120px;
   width: 220px;
   border-radius: 10px;
   box-shadow: 0px 1px 5px rgb(190, 190, 190);
-  margin-top: 47px;
+  margin-top: 30px;
 }
 
 #capsule_3 img {
-  height: 70px;
+  height: 80px;
   width: 220px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -362,6 +385,7 @@ aside {
 #capsule_4 img {
   height: 90px;
   width: 220px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -381,6 +405,7 @@ aside {
 #capsule_5 img {
   height: 90px;
   width: 220px;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
