@@ -150,7 +150,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 article {
@@ -162,13 +162,21 @@ article {
   width: 600px;
 }
 
+.capsule_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 75%;
+}
+
 .capsule {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  border: 1px solid white;
-  box-shadow: 0px 1px 5px grey;
-  border-radius: 10px 10px 10px 10px;
+  border: 3px solid white;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  border-radius: 10px;
   background-color: white;
 }
 
@@ -178,7 +186,7 @@ article {
   border-radius: 10px 10px 0 0;
 }
 
-.capsule h2 {
+.capsule h3 {
   font-size: 0.7em;
   margin-left: 10px;
 }
@@ -201,17 +209,6 @@ article {
 
 .etoile_grise {
   color: #cfcdcd;
-}
-
-#ligne_1 {
-  display: flex;
-  justify-content: space-around;
-}
-
-#ligne_2 {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
 }
 
 #afficher_plus {
@@ -242,7 +239,7 @@ aside {
 
 #capsule_ho {
   display: flex;
-  border: 1px solid #ecebeb;
+  border: 3px solid white;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 1px 5px grey;
   background-color: white;
@@ -251,10 +248,10 @@ aside {
 
 #capsule_ho img {
   width: 90px;
-  height: 85px;
+  height: 90px;
   border-radius: 10px 0 0 10px;
 }
-#description h2 {
+#description h3 {
   font-size: 0.6em;
   margin-left: 15px;
 }
@@ -275,6 +272,11 @@ aside {
 
 /* partie activités à Marseille */
 
+.activites h2 {
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
 .activites {
   display: flex;
   flex-direction: column;
@@ -290,59 +292,56 @@ aside {
 }
 
 #capsule_verticale {
-  border: 1px solid white;
   height: 300px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 1px 5px grey;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
 }
 
-#capsule_verticale h2 {
-  font-size: 0.8em;
+#capsule_verticale h3 {
+  font-size: 0.7em;
   padding-left: 5px;
 }
 
 #capsule_verticale img {
-  height: 250px;
-  width: 200px;
+  height: 260px;
+  width: 213px;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_2 {
-  border: 1px solid white;
   height: 150px;
-  width: 248px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 1px 5px grey;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
 }
 
 #capsule_2 img {
-  height: 100px;
-  width: 250px;
+  height: 110px;
+  width: 220px;
   border-radius: 10px 10px 0px 0px;
 }
 
-#capsule_2 h2 {
-  font-size: 0.8em;
+#capsule_2 h3 {
+  font-size: 0.7em;
   padding-left: 5px;
 }
 
 #capsule_3 {
-  border: 1px solid white;
   height: 100px;
-  width: 248px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 1px 5px grey;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
   margin-top: 47px;
 }
 
 #capsule_3 img {
   height: 70px;
-  width: 250px;
+  width: 220px;
   border-radius: 10px 10px 0px 0px;
 }
 
-#capsule_3 h2 {
-  font-size: 0.8em;
+#capsule_3 h3 {
+  font-size: 0.7em;
   padding-left: 5px;
 }
 
@@ -354,41 +353,39 @@ aside {
 }
 
 #capsule_4 {
-  border: 1px solid white;
-  height: 110px;
-  width: 248px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 1px 5px grey;
+  height: 130px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
 }
 
 #capsule_4 img {
-  height: 70px;
-  width: 250px;
+  height: 90px;
+  width: 220px;
   border-radius: 10px 10px 0px 0px;
 }
 
-#capsule_4 h2 {
-  font-size: 0.8em;
+#capsule_4 h3 {
+  font-size: 0.7em;
   padding-left: 5px;
 }
 
 #capsule_5 {
-  border: 1px solid white;
-  height: 110px;
-  width: 248px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 1px 5px grey;
-  margin-top: 77px;
+  height: 130px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  margin-top: 40px;
 }
 
 #capsule_5 img {
-  height: 70px;
-  width: 250px;
+  height: 90px;
+  width: 220px;
   border-radius: 10px 10px 0px 0px;
 }
 
-#capsule_5 h2 {
-  font-size: 0.8em;
+#capsule_5 h3 {
+  font-size: 0.7em;
   padding-left: 5px;
 }
 
