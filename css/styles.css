@@ -29,6 +29,10 @@ a {
   margin-left: -40px;
 }
 
+#logo {
+  margin-bottom: 30px;
+}
+
 #logo img {
   width: 70px;
 }
@@ -63,14 +67,13 @@ nav li a:hover {
 .barre_de_recherche {
   display: flex;
   align-items: baseline;
-  width: 290px;
-  margin-top: -10px;
+  width: 320px;
 }
 
 #bordure_icone_location {
   border: 1px solid #f8f8f8;
   background-color: #f8f8f8;
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
   height: 21px;
   width: 20px;
   padding: 5px;
@@ -81,12 +84,13 @@ nav li a:hover {
   margin-left: 5px;
 }
 
-.barre_de_recherche p {
-  border: 8px solid #0065fc;
+.barre_de_recherche #bouton_rechercher {
+  border: 6px solid #0065fc;
   background-color: #0065fc;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   color: white;
   font-size: 0.8em;
+  margin-left: -2px;
 }
 
 input[type="search"] {
@@ -106,7 +110,7 @@ input::placeholder {
   font-size: 0.7em;
   font-family: Raleway;
   font-weight: bold;
-  margin-top: -5px;
+  margin-top: 10px;
 }
 
 .filtres ul {
