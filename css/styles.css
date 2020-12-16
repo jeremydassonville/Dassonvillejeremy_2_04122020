@@ -50,6 +50,7 @@ nav ul {
 nav li {
   margin-right: 60px;
   color: #0065fc;
+  font-weight: bold;
 }
 
 nav li a {
@@ -208,7 +209,7 @@ article {
   flex-direction: column;
   align-content: space-between;
   border: 6px solid white;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px rgb(182, 181, 181);
   border-radius: 10px;
   background-color: white;
 }
@@ -283,7 +284,7 @@ aside {
   display: flex;
   border: 6px solid white;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px grey;
+  box-shadow: 5px 5px 10px rgb(182, 181, 181);
   background-color: white;
 }
 
@@ -317,7 +318,7 @@ aside {
 
 .activites h2 {
   margin-top: 40px;
-  font-size: 0.9em;
+  font-size: 1em;
   padding-bottom: 10px;
 }
 
@@ -332,59 +333,59 @@ aside {
 }
 
 #capsule_verticale {
-  height: 300px;
+  height: 550px;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
 }
 
 #capsule_verticale h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 5px;
 }
 
 #capsule_verticale img {
-  height: 260px;
-  width: 213px;
+  height: 500px;
+  width: 420px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_2 {
-  height: 150px;
-  width: 220px;
+  height: 280px;
+  width: 440px;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
 }
 
 #capsule_2 img {
-  height: 110px;
-  width: 220px;
+  height: 230px;
+  width: 440px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_2 h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 5px;
 }
 
 #capsule_3 {
-  height: 120px;
-  width: 220px;
+  height: 240px;
+  width: 440px;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
   margin-top: 30px;
 }
 
 #capsule_3 img {
-  height: 80px;
-  width: 220px;
+  height: 190px;
+  width: 440px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_3 h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 5px;
 }
 
@@ -396,41 +397,41 @@ aside {
 }
 
 #capsule_4 {
-  height: 130px;
-  width: 220px;
+  height: 250px;
+  width: 440px;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
 }
 
 #capsule_4 img {
-  height: 90px;
-  width: 220px;
+  height: 200px;
+  width: 440px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_4 h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 5px;
 }
 
 #capsule_5 {
-  height: 130px;
-  width: 220px;
+  height: 250px;
+  width: 440px;
   border-radius: 10px;
-  box-shadow: 0px 1px 5px rgb(190, 190, 190);
-  margin-top: 40px;
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
+  margin-top: 50px;
 }
 
 #capsule_5 img {
-  height: 90px;
-  width: 220px;
+  height: 200px;
+  width: 440px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 
 #capsule_5 h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 5px;
 }
 
@@ -440,27 +441,29 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #ecebeb;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-bottom: 30px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 #titre {
-  font-size: 0.6em;
+  font-size: 0.8em;
   margin-left: 40px;
   margin-top: 20px;
 }
 
 #contenue ul {
   list-style-type: none;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 #nos_heb {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 #assistance {
-  margin-right: 300px;
+  margin-right: 700px;
 }
 
 /* Responsive - taille d'écran + de 1920px */
