@@ -34,9 +34,26 @@ a {
 }
 
 #logo img {
-  width: 90px;
+  width: 130px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
+#titre {
+  font-size: 0.6em;
+  margin-left: 40px;
+}
+
+#titre h1,
+#titre p {
+  margin-top: 50px;
+  width: 800px;
+}
+
+#titre p {
+  margin-top: -10px;
+  font-size: 1.1em;
+}
+
 #sous_titre {
   margin-top: -6px;
   color: grey;
@@ -133,7 +150,7 @@ input::placeholder {
   border-radius: 15px 15px 15px 15px;
 }
 
-#icone_filtres {
+.icone_filtres {
   margin-right: 10px;
   border: 10px solid #deebff;
   border-radius: 15px 15px 15px 15px;
@@ -236,7 +253,7 @@ article {
   color: grey;
 }
 
-#etoile {
+.etoile {
   display: flex;
   align-items: baseline;
   font-size: 0.8em;
@@ -275,7 +292,7 @@ aside {
   background-color: #ecebeb;
   border: 1px solid #ecebeb;
   border-radius: 30px;
-  width: 37%;
+  width: 35%;
 }
 
 #ecart {
@@ -291,7 +308,7 @@ aside {
   height: 550px;
 }
 
-#capsule_ho {
+.capsule_ho {
   display: flex;
   border: 6px solid white;
   border-radius: 10px;
@@ -299,25 +316,25 @@ aside {
   background-color: white;
 }
 
-#capsule_ho img {
+.capsule_ho img {
   width: 170px;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
-#description h3 {
+.description h3 {
   font-size: 1em;
   margin-left: 15px;
 }
 
-#description p {
+.description p {
   font-size: 0.8em;
   color: grey;
   margin-left: 15px;
   margin-top: -12px;
 }
 
-#etoile_ho {
+.etoile_ho {
   display: flex;
   color: #0065fc;
   font-size: 0.8em;
@@ -340,22 +357,23 @@ aside {
 
 #capsule_activites {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: ;
 }
 
-#capsule_verticale {
+.capsule_verticale {
   height: 550px;
+  width: 420px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(228, 228, 228);
 }
 
-#capsule_verticale h3 {
+.capsule_verticale h3 {
   font-size: 0.9em;
   padding-left: 5px;
 }
 
-#capsule_verticale img {
+.capsule_verticale img {
   height: 500px;
   width: 420px;
   object-fit: cover;
@@ -401,7 +419,7 @@ aside {
   padding-left: 5px;
 }
 
-#capsule_horizontale {
+.capsule_horizontale {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -459,13 +477,13 @@ footer {
   margin-right: -40px;
 }
 
-#titre {
+.titre {
   font-size: 0.8em;
   margin-left: 40px;
   margin-top: 20px;
 }
 
-#contenue ul {
+.contenue ul {
   list-style-type: none;
   font-size: 0.8em;
 }
@@ -480,16 +498,20 @@ footer {
 
 /* Responsive - taille d'écran smartphone*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   body {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
   }
 
   /* Header */
 
   #titre {
     font-size: 0.6em;
+  }
+
+  #titre img {
+    width: 90px;
+    margin-top: 20px;
   }
 
   #titre h1,
@@ -578,26 +600,26 @@ footer {
   /* Les plus populaires */
 
   #titre_section_pop h2 {
-    margin-left: -60px;
+    margin-left: -50px;
   }
 
   #titre_section_pop #pop_font {
-    margin-right: -90px;
+    margin-right: -85px;
   }
 
   #populaires {
-    margin-left: -8px;
-    width: 370px;
+    margin-left: -44px;
+    width: 427px;
     border-radius: 0px;
     padding-bottom: 30px;
   }
 
-  #capsule_ho {
-    margin-left: -60px;
+  .capsule_ho {
+    margin-left: -25px;
     width: 340px;
   }
 
-  /* Activités à Marseill */
+  /* Activités à Marseille */
 
   #capsule_activites {
     display: flex;
@@ -606,17 +628,18 @@ footer {
     height: 1100px;
   }
 
-  #capsule_verticale {
+  .capsule_verticale {
     height: 150px;
+    width: 355px;
   }
 
-  #capsule_verticale img {
+  .capsule_verticale img {
     height: 100px;
     width: 355px;
   }
 
   #capsule_2 {
-    margin-top: -90px;
+    margin-top: -70px;
     height: 150px;
     width: 355px;
   }
@@ -627,7 +650,7 @@ footer {
   }
 
   #capsule_3 {
-    margin-top: 25px;
+    margin-top: 34px;
     height: 150px;
     width: 355px;
   }
@@ -638,7 +661,7 @@ footer {
   }
 
   #capsule_4 {
-    margin-top: -95px;
+    margin-top: -70px;
     height: 150px;
     width: 355px;
   }
@@ -649,7 +672,7 @@ footer {
   }
 
   #capsule_5 {
-    margin-top: 25px;
+    margin-top: 34px;
     height: 150px;
     width: 355px;
   }
@@ -668,8 +691,10 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
-    margin-top: -20px;
+    margin-top: 20px;
     padding-top: 20px;
+    margin-left: -50px;
+    margin-right: -350px;
   }
 
   #a_propos {
@@ -687,4 +712,110 @@ footer {
   #contenue {
     width: 250px;
   }
+}
+
+
+/* Responsive Tablettes */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .corps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: block;
+    margin-left: -290px;
+  }
+
+  nav ul li a:hover {
+    border: none;
+  }
+
+  .barre_de_recherche {
+    margin-left: 30%
+  }
+
+  #filtre_capsule {
+    font-size: 0.7em;
+  }
+
+  article {
+    width: 95%;
+    height: 1000px;
+  }
+
+  aside {
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  /* Activités à Marseille */
+
+  #capsule_activites {
+    display: flex;
+    flex-direction: column;
+    height: 1800px;
+  }
+
+  .capsule_verticale {
+    height: 240px;
+    width: 650px;
+  }
+
+  .capsule_verticale img {
+    height: 190px;
+    width: 650px;
+  }
+
+  #capsule_2 {
+    margin-top: -260px;
+    height: 240px;
+    width: 650px;
+  }
+
+  #capsule_2 img {
+    height: 190px;
+    width: 650px;
+  }
+
+  #capsule_3 {
+    margin-top: 40px;
+    height: 240px;
+    width: 650px;
+  }
+
+  #capsule_3 img {
+    height: 190px;
+    width: 650px;
+  }
+
+  #capsule_4 {
+    margin-top: -300px;
+    height: 240px;
+    width: 650px;
+  }
+
+  #capsule_4 img {
+    height: 190px;
+    width: 650px;
+  }
+
+  #capsule_5 {
+    margin-top: 0px;
+    height: 240px;
+    width: 650px;
+  }
+
+  #capsule_5 img {
+    height: 190px;
+    width: 650px;
+  }
+
+  .resp_marg {
+    margin-top: -280px;
+  }
+
 }
