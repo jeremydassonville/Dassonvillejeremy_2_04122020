@@ -722,7 +722,34 @@ footer {
   }
 }
 
+/* Responsive smartphone 375px */
 
+@media screen and (max-width: 375px) {
+  body {
+    margin-left: 15px;
+  }
+
+  aside h2{
+    position: relative;
+    left: 15px;
+  }
+
+  aside #pop_font {
+    position: relative;
+    right: 15px;
+  }
+}
+  .capsule_ho {
+    margin-left: -30px;
+  }
+
+  .capsule {
+    margin-left: -5px;
+  }
+
+  #capsule_activites {
+    margin-left: -3px;
+  }
 /* Responsive Tablettes */
 
 @media screen and (min-width: 750px) and (max-width: 1023px) {
@@ -833,7 +860,7 @@ footer {
 
 }
 
-@media screen and (min-width: 1020px) and (max-width: 1640px) {
+@media screen and (min-width: 1020px) and (max-width: 1820px) {
 
   .corps {
     display: flex;
@@ -883,7 +910,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 1800px;
-    margin-left: 20px;
+    margin-left: 60px;
   }
 
   .capsule_verticale {
@@ -953,7 +980,7 @@ footer {
 @media screen and (min-width: 1142px) and (max-width: 1477px) {
 
   article {
-    width: 95%;
+    width: 96%;
     height: 650px;
     padding-bottom: 50px;
   }
@@ -973,10 +1000,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 1478px) and (max-width: 1640px) {
+@media screen and (min-width: 1478px) and (max-width: 1820px) {
 
   article {
-    width: 95%;
+    width: 96%;
     height: 740px;
     padding-bottom: 50px;
   }
@@ -993,5 +1020,13 @@ footer {
 
   #capsule_activites {
     text-align: center;
+  }  
+}
+
+@media screen and (min-width: 1900px) {
+  body {
+    max-width: 1821px;
+    margin: auto;
   }
 }
+
