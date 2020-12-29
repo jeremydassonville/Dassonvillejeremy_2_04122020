@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/P02_test/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/acaa29f0c6.js" crossorigin="anonymous"></script>
     <title>Reservia - site de reservation en ligne</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,8 +26,8 @@
             <!-- menu de navigation -->
             <nav>
                 <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
+                    <li id="nav_resp1"><a href="#hebergements">Hébergements</a></li>
+                    <li id="nav_resp2"><a href="#activites">Activités</a></li>
                     <li id="resp_smart">S'inscrire</li>
                 </ul>
             </nav>
@@ -248,15 +250,15 @@
 
     <div class="activites" id="activites">
         <h2 id="activites_titre">Activités à Marseille</h2>
-        <div id="capsule_resp">
-            <div id="capsule_activites">
-                <a href="index.html">
-                    <div class="capsule_verticale">
-                        <img src="/Projet_2_Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                            alt="illustation Vieux Port" />
-                        <h3>Vieux Port</h3>
-                    </div>
-                </a>
+        <div id="capsule_activites">
+            <a href="index.html">
+                <div class="capsule_verticale">
+                    <img src="/Projet_2_Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="illustation Vieux Port" />
+                    <h3>Vieux Port</h3>
+                </div>
+            </a>
+            <div class="capsule_display">
                 <div class="capsule_horizontale">
                     <a href="index.html">
                         <div id="capsule_2">
@@ -275,13 +277,15 @@
                         </div>
                     </a>
                 </div>
-                <a href="index.html">
-                    <div class="capsule_verticale">
-                        <img src="/Projet_2_Reservia/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                            alt="illustration parc nationale des calanques" />
-                        <h3>Parc Nationale des Calanques</h3>
-                    </div>
-                </a>
+            </div>
+            <a href="index.html">
+                <div class="capsule_verticale">
+                    <img src="/Projet_2_Reservia/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="illustration parc nationale des calanques" />
+                    <h3>Parc Nationale des Calanques</h3>
+                </div>
+            </a>
+            <div class="capsule_display">
                 <div class="capsule_horizontale">
                     <a href="index.html">
                         <div id="capsule_4">
@@ -291,7 +295,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="capsule_horizontale">
+                <div class="capsule_horizontale">
                     <a href="index.html">
                         <div id="capsule_5">
                             <img src="/Projet_2_Reservia/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
