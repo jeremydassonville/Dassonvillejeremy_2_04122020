@@ -291,7 +291,7 @@ aside {
 #groupe_capsule {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .capsule_ho {
@@ -301,6 +301,7 @@ aside {
   box-shadow: 5px 5px 10px rgb(182, 181, 181);
   background-color: white;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .capsule_ho img {
@@ -711,6 +712,61 @@ footer {
 
 }
 
+@media screen and (max-width: 1700px) and (min-width: 901px) {
+
+  /* Hébergements à Marseille */
+
+  .capsule{
+    width: 250px;
+    height: 200px;
+  }
+
+  .capsule img {
+    width: 250px;
+  }
+
+}
+
+@media screen and (max-width: 1530px) and (min-width: 901px) {
+    
+  /* Hébergements à Marseille */
+
+    .capsule{
+      width: 220px;
+      height: 200px;
+    }
+  
+    .capsule img {
+      width: 220px;
+    }
+
+    /* Les plus populaires */
+
+    .capsule_ho {
+      margin-left: -30px;
+      width: 360px;
+      height: 130px;
+    }
+
+    .capsule_ho img {
+      height: 130px;
+    }
+}
+
+@media screen and (max-width: 1370px) and (min-width: 901px) {
+    
+  /* Hébergements à Marseille */
+
+    .capsule{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .capsule img {
+      width: 200px;
+    }
+}
+
 @media screen and (max-width: 1475px) and (min-width: 901px) {
 
     /* Activités à Marseille */
@@ -734,44 +790,139 @@ footer {
       width: 220px;
     }
 
+    /* Les plus populaires */
+
+    .capsule_ho {
+      width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 901px) {
+
+    /* Toute la page */
+    header, main, .activites {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+  .corps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hébergements à Marseille */
+
+  article {
+    order: 1;
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-left: -20px;
+  }
+
+  .capsule{
+    width: 350px;
+    height: 200px;
+  }
+
+  .capsule img {
+    width: 350px;
+  }
+
+  /* Les plus populaires */
+
+  aside {
+    width: 100%;
+  }
+
+  #groupe_capsule {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 115%;
+    margin-left: -45px;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (max-width: 1070px) and (min-width: 950px) {
+
+  /* Les plus populaires */
+
+    .capsule_ho {
+      width: 260px;
+    }
+
+    .capsule_ho img {
+      width: 110px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 901px) {
 
+
+  /* Hébergements à Marseille */
+
+  .capsule{
+    width: 300px;
+    height: 200px;
+  }
+
+  .capsule img {
+    width: 300px;
+  }
+
+
   /* Activités à Marseille */
 
   .capsule_verticale {
-    width: 400px;
+    width: 450px;
     margin-bottom: 40px;
   }
 
   .capsule_horizontale {
-    width: 400px;
+    width: 450px;
     margin-bottom: 40px;
   }
 
   .capsule_horizontale img {
-    width: 400px;
+    width: 450px;
   }
 
 }
 
-@media screen and (max-width: 1045px) and (min-width: 901px) {
+@media screen and (max-width: 1020px) and (min-width: 901px) {
+
+  /* Hébergements à Marseille */
+
+  .capsule{
+    width: 250px;
+    height: 200px;
+  }
+
+  .capsule img {
+    width: 250px;
+  }
+
    
   /* Activités à Marseille */
 
    .capsule_verticale {
-    width: 330px;
+    width: 400px;
     margin-bottom: 20px;
   }
 
   .capsule_horizontale {
-    width: 330px;
+    width: 400px;
     margin-bottom: 20px;
   }
 
   .capsule_horizontale img {
-    width: 330px;
+    width: 400px;
   }
 }
 
@@ -781,5 +932,9 @@ footer {
   header, main, .activites {
     max-width: 1600px;
     margin: auto;
+  }
+
+  footer {
+    width: 100%;
   }
 }
