@@ -49,6 +49,7 @@ a {
 }
 
 /* menu navigation */
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -456,33 +457,6 @@ footer {
 
   nav {
   font-size: 0.8em;
-
-  }
-  
-  #nav_resp1 {
-    margin-top: 100px;
-    border-bottom: 3px solid #ecebeb;
-  }
-
-  #nav_resp2 {
-    margin-top: 100px;
-    margin-left: 200px;
-    border-bottom: 3px solid #ecebeb;
-    padding-bottom: 5px;
-  }
-
-  #resp_smart {
-    margin-left: -40px;
-  }
-
-  nav li {
-    width: 150px;
-  }
-
-  nav li a:hover {
-    border-top: 0px;
-    border-bottom:  3px solid #0065fc;
-    padding-bottom: 5px;
   }
 
   /* Barre de recherche */
@@ -667,6 +641,33 @@ footer {
 
  @media screen and (max-width: 600px) {
   
+  
+  /* Menu de navigation */
+
+  #resp_smart {
+    margin-left: -60px;
+  }
+
+  #nav_resp1 {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: -50px;
+    border-bottom: 3px solid #ecebeb;
+    padding-bottom: 10px;
+  }
+
+  #nav_resp2 {
+    margin-top: 100px;
+    border-bottom: 3px solid #ecebeb;
+    padding-bottom: 10px;
+  }
+
+  ul li a:hover {
+    border: none;
+    border-bottom: 3px solid blue;
+    padding-bottom: 10px;
+  }
+
   /* Hébergements à Marseille */
 
   .capsule {
@@ -677,12 +678,51 @@ footer {
 
 @media screen and (max-width: 530px) {
 
+  /* Menu de navigation */
+
+  #resp_smart {
+    margin-left: -100px;
+  }
+
+  #nav_resp1 {
+    margin-left: -150px;
+  }
+
+  #nav_resp2 {
+
+  }
   /* Hébergements à Marseille */
 
   .capsule {
     width: 97%;
   }
 
+}
+
+@media screen and (max-width: 380px) {
+
+  /* Menu de navigation */
+
+  #resp_smart {
+    margin-left: -130px;
+    margin-top: 15px;
+  }
+
+  #nav_resp2 {
+    margin-left: -30px;
+  } 
+
+  /* barre de recherche */
+
+  .barre_de_recherche {
+    margin-left: -20px;
+  }
+
+  /* filtres */
+
+  .filtres {
+    font-size: 14px;
+  }
 }
 
 
@@ -755,6 +795,13 @@ footer {
 
 @media screen and (max-width: 1370px) and (min-width: 901px) {
     
+
+  /* Header  */
+
+  header h1 {
+    font-size: 20px;
+  }
+
   /* Hébergements à Marseille */
 
     .capsule{
