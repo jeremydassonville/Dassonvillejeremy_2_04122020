@@ -2,6 +2,7 @@
 
 body {
   font-family: Raleway, arial, serif;
+  margin: 0px;
 }
 
 header, main, .activites {
@@ -389,12 +390,18 @@ aside {
 /* Footer */
 
 footer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   background-color: #ecebeb;
+  width: 100%;
   margin-top: 50px;
   padding-bottom: 30px;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-right: 20px;
 }
 
 .titre {
@@ -420,10 +427,24 @@ footer {
 
   aside {
     width: 100%;
+    margin-bottom: 40px;
   }
 
   #hebergements {
     width: 100%;
     order: 1;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  header,main, .activites {
+    max-width: 1500px;
+    margin: auto;
+  }
+
+  .container_footer {
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
   }
 }
