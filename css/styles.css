@@ -31,17 +31,12 @@ a {
 
 #logo img {
   width: 130px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-#titre {
-  font-size: 0.5em;
+  margin-top: 20px;
   margin-left: 40px;
 }
 
-#titre p {
-  margin-top: -10px;
-  font-size: 1.1em;
+.container_titre {
+  font-size: 12px;
 }
 
 #sous_titre {
@@ -57,9 +52,9 @@ nav ul {
 }
 
 nav li {
-  margin-right: 60px;
+  margin-right: 80px;
   color: #0065fc;
-  font-weight: bold;
+  font-size: 15px;
 }
 
 nav li a {
@@ -67,10 +62,15 @@ nav li a {
   color: #0065fc;
 }
 
+#nav_resp2 a{
+  color: grey
+}
+
 nav li a:hover {
   border-top: 3px solid #0065fc;
-  padding-top: 27px;
+  padding-top: 20px;
 }
+
 
 /* barre de recherche */
 
@@ -83,25 +83,26 @@ nav li a:hover {
   border: 1px solid #eeeded;
   background-color: #eeeded;
   border-radius: 10px 0 0 10px;
-  height: 30px;
-  width: 29px;
-  padding: 7px;
+  height: 23px;
+  width: 22px; 
+  padding: 6px;
+  padding-top: 9px;
 }
 
 #icone {
-  font-size: 1.2em;
+  font-size: 0.9em;
   margin-left: 8px;
   margin-top: 4px;
 }
 
 .barre_de_recherche #bouton_rechercher {
-  border: 11px solid #0065fc;
+  border: 9px solid #0065fc;
   background-color: #0065fc;
   border-radius: 0 10px 10px 0;
   color: white;
-  font-size: 0.8em;
-  margin-left: -3px;
-  padding-top: 6px;
+  font-size: 14px;
+  margin-left: -20px;
+  padding-top: 4px;
 }
 
 input[type="search"] {
@@ -113,7 +114,9 @@ input[type="search"] {
 
 input::placeholder {
   color: black;
-  font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /* Filtres de recherche */
@@ -129,19 +132,19 @@ input::placeholder {
 
 .filtres ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 5px;
 }
 
 .filtres ul li {
-  margin-left: 30px;
+  margin-left: 8px;
   padding-right: 20px;
   border: 1px solid #ecebeb;
   border-radius: 15px 15px 15px 15px;
 }
 
 .icone_filtres {
-  margin-right: 10px;
   border: 10px solid #deebff;
   border-radius: 15px 15px 15px 15px;
   color: #0065fc;
@@ -166,7 +169,7 @@ input::placeholder {
 
 #icone_info {
   color: #0065fc;
-  font-size: 0.6em;
+  font-size: 0.9em;
   border: 1px solid #ecebeb;
   height: 17px;
   width: 20px;
@@ -207,7 +210,7 @@ article {
 
 .capsule_container  {
   width: 26%;
-  min-width: 200px;
+  min-width: 240px;
 }
 
 .capsule {
@@ -296,7 +299,7 @@ aside {
   background-color: white;
   margin-bottom: 40px;
   margin-left: 10%;
-  width: 75%;
+  width: 75%; 
 }
 
 .capsule_ho img {
@@ -415,19 +418,83 @@ footer {
   font-size: 0.8em;
 }
 
+.contenue ul li {
+  margin-top: 10px;
+}
+
 
 /* Responsive - taille d'écran smartphone*/
 
 @media screen and (max-width: 1200px) {
+
+  header {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  main, .activites {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
   .corps {
     display: flex;
     flex-direction: column;
   }
 
+  /* Header */
+
+  #logo img {
+    width: 100px;
+  }
+
+  .container_titre{
+    font-size: 10px;
+  }
+
+  .container_titre p {
+    font-size: 12px;
+  }
+
+  /* Barre de recherche */
+
+
+  /* Filtres */
+
+  .filtres {
+    flex-wrap: wrap;
+  }
+
+  .resp_filtres {
+    margin-top: 10px;
+  }
+
+  
+
+  /* Hébergements à Marseille */
+
+  article {
+    background-color: white;
+    border: none;
+  }
+
+  /* les plus populaires */
+
   aside {
     width: 100%;
+    border-radius: 0px;
     margin-bottom: 40px;
+  }
+
+  #groupe_capsule {
+    display: flex;
+
+  }
+
+  .capsule_ho {
+    width: 80%;
+    min-width: 240px;
+
   }
 
   #hebergements {
