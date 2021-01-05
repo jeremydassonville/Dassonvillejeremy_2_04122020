@@ -17,16 +17,22 @@ a {
 
 /* Header */
 
-.en_tete {
+
+.titre_resp {
+  color: #0065fc;
+  font-size: 15px;
+}
+
+.menu_resp {
   display: flex;
   justify-content: space-between;
-  font-size: 1.4em;
-  margin-left: -40px;
+  align-items: center;
 }
 
 #logo {
   margin-bottom: 30px;
   width: 100px;
+  margin-left: -40px;
 }
 
 #logo img {
@@ -48,13 +54,19 @@ a {
 
 nav ul {
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
 }
 
 nav li {
-  margin-right: 80px;
+  margin-right: 140px;
+  margin-top: -82px;
   color: #0065fc;
   font-size: 15px;
+}
+
+#nav_resp1 {
+  margin-right: 90px;
 }
 
 nav li a {
@@ -68,7 +80,7 @@ nav li a {
 
 nav li a:hover {
   border-top: 3px solid #0065fc;
-  padding-top: 20px;
+  padding-top: 46px;
 }
 
 
@@ -442,6 +454,35 @@ footer {
     flex-direction: column;
   }
 
+  /* Menu de navigation */
+
+  nav ul {
+    margin-top: 80px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav li {
+    margin-top: 82px;
+  }
+
+  nav {
+    border-bottom: 3px solid #ecebeb;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -150px;
+  }
+
+  nav li a:hover {
+    border-top: none;
+  }
+
+  nav:hover {
+    border-bottom: 3px solid #0065fc;
+    padding-bottom: 15px;
+  }
+
   /* Header */
 
   #logo img {
@@ -488,18 +529,42 @@ footer {
 
   #groupe_capsule {
     display: flex;
-
   }
 
   .capsule_ho {
     width: 80%;
-    min-width: 240px;
-
   }
 
   #hebergements {
     width: 100%;
     order: 1;
+  }
+
+  /* Activités à Marseille */
+
+  .activites {
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+
+  #capsule_activites {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .capsule_verticale {
+    margin-top: 20px;
+    height: 180px;
+    width: 100%;
+  }
+
+  .capsule_verticale img {
+    height: 130px;
+  }
+
+  .capsule_horizontale{
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
