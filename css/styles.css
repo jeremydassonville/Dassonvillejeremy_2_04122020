@@ -186,8 +186,7 @@ input::placeholder {
   align-items: center;
   font-size: 0.8em;
   color: grey;
-  margin-top: -5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #icone_info {
@@ -559,7 +558,6 @@ footer {
 
   #filtre_capsule {
     margin-top: -15px;
-    margin-left: -14px;
   }
 
   .resp_filtres {
@@ -670,6 +668,11 @@ footer {
   }
 
 @media screen and (max-width: 430px) {
+
+
+  #filtre_capsule {
+    margin-left: -14px;
+  }
 
   /* Hébergements */
 
