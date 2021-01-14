@@ -32,7 +32,6 @@ a {
 .menu_resp {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 #logo img {
@@ -70,7 +69,6 @@ nav li {
 }
 
 nav li a {
-  text-decoration: none;
   color: #0065fc;
 }
 
@@ -92,7 +90,6 @@ nav li a:hover {
 #bordure_icone_location {
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
-  height: 24px;
   width: 25px; 
   padding: 6px;
   padding-top: 10px;
@@ -137,7 +134,6 @@ input::placeholder {
   display: flex;
   align-items: baseline;
   font-size: 14px;
-  font-family: Raleway;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -234,13 +230,12 @@ input::placeholder {
 
 .capsule_container  {
   width: 29%;
-  min-width: 200px;
 }
 
 .capsule {
   display: flex;
   flex-direction: column;
-  border: 3px solid white;
+  border: 3px solid rgb(252, 252, 252);
   box-shadow: 1px 1px 10px rgb(204, 202, 202);
   border-radius: 15px;
   background-color: white;
@@ -273,7 +268,6 @@ input::placeholder {
 
 .etoile {
   display: flex;
-  align-items: baseline;
   font-size: 11px;
   margin-left: 9px;
   margin-top: -5px;
@@ -319,7 +313,7 @@ aside {
 
 .capsule_ho {
   display: flex;
-  border: 3px solid white;
+  border: 3px solid rgb(252, 252, 252);
   border-radius: 20px;
   box-shadow: 1px 1px 10px rgb(204, 202, 202);
   background-color: white;
@@ -339,6 +333,11 @@ aside {
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
+
+.capsule_ho a {
+  display: flex;
+}
+
 .description h3 {
   font-size: 14px;
   margin-left: 15px;
